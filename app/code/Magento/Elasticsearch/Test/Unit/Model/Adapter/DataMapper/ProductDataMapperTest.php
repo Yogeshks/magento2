@@ -181,7 +181,7 @@ class ProductDataMapperTest extends \PHPUnit\Framework\TestCase
         );
         $this->resourceIndex->expects($this->any())
             ->method('getPriceIndexData')
-            ->with([1, ], 1)
+            ->with([1], 1)
             ->willReturn([
                 1 => [1]
             ]);
@@ -272,7 +272,7 @@ class ProductDataMapperTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 '1',
-                ['price'=>'11','created_at'=>null,'color_value'=>'11', ],
+                ['price'=>'11','created_at'=>null,'color_value'=>'11'],
                 '1',
                 true,
                 'datetime',
@@ -281,17 +281,16 @@ class ProductDataMapperTest extends \PHPUnit\Framework\TestCase
             [
                 '1',
                 [
-                    'tier_price'=>
-                        [[
-                            'price_id'=>'1',
-                            'website_id'=>'1',
-                            'all_groups'=>'1',
-                            'cust_group'=>'1',
-                            'price_qty'=>'1',
-                            'website_price'=>'1',
-                            'price'=>'1'
-                        ]],
-                        'created_at'=>'00-00-00 00:00:00'
+                    'tier_price'=> [[
+                        'price_id'=>'1',
+                        'website_id'=>'1',
+                        'all_groups'=>'1',
+                        'cust_group'=>'1',
+                        'price_qty'=>'1',
+                        'website_price'=>'1',
+                        'price'=>'1'
+                    ]],
+                    'created_at'=>'00-00-00 00:00:00'
                 ],
                 '1',
                 false,
@@ -313,23 +312,21 @@ class ProductDataMapperTest extends \PHPUnit\Framework\TestCase
                     'small_image' => '1',
                     'thumbnail' => '1',
                     'swatch_image' => '1',
-                    'media_gallery'=>
-                        [
-                            'images' =>
-                                [[
-                                    'file'=>'1',
-                                    'media_type'=>'image',
-                                    'position'=>'1',
-                                    'disabled'=>'1',
-                                    'label'=>'1',
-                                    'title'=>'1',
-                                    'base_image'=>'1',
-                                    'small_image'=>'1',
-                                    'thumbnail'=>'1',
-                                    'swatch_image'=>'1'
-                                ]]
-                        ],
-                        'created_at'=>'00-00-00 00:00:00'
+                    'media_gallery'=> [
+                        'images' => [[
+                            'file'=>'1',
+                            'media_type'=>'image',
+                            'position'=>'1',
+                            'disabled'=>'1',
+                            'label'=>'1',
+                            'title'=>'1',
+                            'base_image'=>'1',
+                            'small_image'=>'1',
+                            'thumbnail'=>'1',
+                            'swatch_image'=>'1'
+                        ]]
+                    ],
+                    'created_at'=>'00-00-00 00:00:00'
                 ],
                 '1',
                 false,
@@ -343,28 +340,26 @@ class ProductDataMapperTest extends \PHPUnit\Framework\TestCase
                     'small_image' => '1',
                     'thumbnail' => '1',
                     'swatch_image' => '1',
-                    'media_gallery'=>
-                        [
-                            'images' =>
-                                [[
-                                    'file'=>'1',
-                                    'media_type'=>'video',
-                                    'position'=>'1',
-                                    'disabled'=>'1',
-                                    'label'=>'1',
-                                    'title'=>'1',
-                                    'base_image'=>'1',
-                                    'small_image'=>'1',
-                                    'thumbnail'=>'1',
-                                    'swatch_image'=>'1',
-                                    'video_title'=>'1',
-                                    'video_url'=>'1',
-                                    'video_description'=>'1',
-                                    'video_metadata'=>'1',
-                                    'video_provider'=>'1'
-                                ]]
-                        ],
-                        'created_at'=>'00-00-00 00:00:00'
+                    'media_gallery'=> [
+                        'images' => [[
+                            'file'=>'1',
+                            'media_type'=>'video',
+                            'position'=>'1',
+                            'disabled'=>'1',
+                            'label'=>'1',
+                            'title'=>'1',
+                            'base_image'=>'1',
+                            'small_image'=>'1',
+                            'thumbnail'=>'1',
+                            'swatch_image'=>'1',
+                            'video_title'=>'1',
+                            'video_url'=>'1',
+                            'video_description'=>'1',
+                            'video_metadata'=>'1',
+                            'video_provider'=>'1'
+                        ]]
+                    ],
+                    'created_at'=>'00-00-00 00:00:00'
                 ],
                 '1',
                 false,

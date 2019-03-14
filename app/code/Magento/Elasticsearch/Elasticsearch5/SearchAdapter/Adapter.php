@@ -54,19 +54,15 @@ class Adapter implements AdapterInterface
      * @var array
      */
     private static $emptyRawResponse = [
-        "hits" =>
-            [
-                "hits" => []
-            ],
-        "aggregations" =>
-            [
-                "price_bucket" => [],
-                "category_bucket" =>
-                    [
-                        "buckets" => []
-
-                    ]
+        "hits" => [
+            "hits" => []
+        ],
+        "aggregations" => [
+            "price_bucket" => [],
+            "category_bucket" => [
+                "buckets" => []
             ]
+        ]
     ];
 
     /**
